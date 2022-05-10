@@ -2,7 +2,7 @@ var iFileName = "Homebrew Syntax - CreatureList.js";
 
 CreatureList["tactical goat"] = {
 	name : "Tactical Goat",
-	source : ["H", 204],
+	source : ["LE", 0],
 	size : 3,
 	type : "Beast",
 	alignment : "Unaligned",
