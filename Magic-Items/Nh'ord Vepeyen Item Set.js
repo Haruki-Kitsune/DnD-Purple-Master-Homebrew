@@ -1,4 +1,4 @@
-var iFileName = "Nord VPN Items.js";
+var iFileName = "Nh'ord Vepeyen Item Set";
 RequiredSheetVersion("13.0.6");
 
 MagicItemsList["hidden location helm"] = {
@@ -130,10 +130,9 @@ MagicItemsList["grimoire of encoding"] = {
         calcChanges: {
             atkAdd : [
                 function (fields, v) {
-                    fields.To_Hit_Bonus += 3;
+			if (v.isSpell) fields.To_Hit_Bonus = (-(What('Cha Mod') + What('Prof')) + 3);
                 },
                 "",
-                1,
             ],
 
             /*	atkAdd // OPTIONAL //
